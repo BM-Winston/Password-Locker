@@ -12,7 +12,7 @@
 + [Authors Info](#author-Info)
 
 ## Description
-<p>This is  a simple pyhton application that allows users to create a password locker account able to store users' passwords, store other existing account details, create new account details, enter new password, view account credentials as well as delete those not needed.</p>
+<p>This is  a simple python application that allows users to create a password locker account able to store users' passwords, store other existing account details, create new account details, enter new password, view account credentials as well as delete those not needed.</p>
 
 ## Installation
 
