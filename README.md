@@ -37,11 +37,11 @@
 
 
 
-Copyright (c) [2020] [Winston Musasia]
+Copyright (c) [2020] [Winston Musasia][LICENSE]
 
 
 [Go Back to the top](#Password Locker)
 
 ## Authors Info
 
-Winston Musasai
+Winston Musasia
