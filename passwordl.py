@@ -7,4 +7,7 @@ class User:
     class user generates new instances for the details of the user
     """
     user_list = []
+
+
+    def __init__(self, firstname, lastname, username, password):
     
