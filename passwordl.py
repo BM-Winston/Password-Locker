@@ -32,7 +32,7 @@ class User:
         removes users from the user_list
         """
 
-        Use.user_list.remove(self)
+        Useruser_list.remove(self)
 
 
 class Credenitals:
@@ -47,12 +47,19 @@ class Credenitals:
         self.acc_password = acc_password
 
 
-    def save-cred(self):
+    def save_acc(self):
         """
         this saves credentials into cred_list
         """
 
         Credenitals.cred_list.save(self)
+
+    def delete_acc(self):
+        """
+        deletes credentials in the cred_list
+        """
+
+        Credenitals.cred_list.remove(self)
 
     
 
