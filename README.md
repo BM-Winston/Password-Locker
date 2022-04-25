@@ -6,7 +6,7 @@
 ## Table of Content
 
 + [Description](#description)
-+ [Behavior Driven Development] (#BDD)
++ [Behavior Driven Development](#Behaviour Driven Development)
 + [Installation Requirement](#Installation)
 + [Technology Used](#technology-used)
 + [Licence](#licence)
@@ -65,4 +65,5 @@ Copyright (c) [2022] [Winston Musasia]
 ## Authors Info
 
 Winston Musasia
+
 musasiawinston@gmail.com

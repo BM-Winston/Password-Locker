@@ -35,6 +35,28 @@ class User:
         Useruser_list.remove(self)
 
 
+    @classmethod
+    def displays_users(cls):
+        """
+        method that displays users_list
+        """
+        return user_list
+
+
+    @classmethod
+    def check_user(cls, username):
+        """
+        method that checks if user is in user_list
+        """
+
+        for user in cls.user_list:
+            if user.username == number:
+                return user
+
+
+
+
+
 class Credenitals:
     """
     This class defines properties of the credentials objects
@@ -60,6 +82,27 @@ class Credenitals:
         """
 
         Credenitals.cred_list.remove(self)
+
+    @classmethod
+    def display_credentials(cls):
+        """
+        method that returns the cred_list
+        """
+        return credentials.cred_list
+
+
+    @classmethod
+    def check_credentials(cls):
+        """
+        method that takes in an acc_name and return name match in acc_name
+        """
+        for credentials in cred_list:
+            if credentials.acc_name == acc_name:
+                return credentials
+
+
+   
+
 
     
 
