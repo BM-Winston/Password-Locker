@@ -43,6 +43,9 @@ class Credenitals:
 
     def __init__(self, credname, credpassword):
 
+        self.credname = credname
+        self.credpassword = credpassword
+
 
 
 
