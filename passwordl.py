@@ -36,6 +36,15 @@ class User:
 
 
 class Credenitals:
+    """
+    This class defines properties of the credentials objects
+    """
+    cred_list = []
+
+    def __init__(self, credname, credpassword):
+
+
+
 
 
 
