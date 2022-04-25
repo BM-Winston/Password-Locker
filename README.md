@@ -47,7 +47,7 @@ What the user can do:
 ## Technology Used
 
 
-* Python
+* Python - To create  backend of the application
 
 
 
