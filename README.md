@@ -6,6 +6,7 @@
 ## Table of Content
 
 + [Description](#description)
++ [Behavior Driven Development] (#BDD)
 + [Installation Requirement](#Installation)
 + [Technology Used](#technology-used)
 + [Licence](#licence)
@@ -13,6 +14,22 @@
 
 ## Description
 <p>This is  a simple python application that allows users to create a password locker account able to store users' passwords, store other existing account details, create new account details, enter new password, view account credentials as well as delete those not needed.</p>
+
+## Behaviour Driven Development
+
+What the user can do:
+ 
+* Create a password locker account
+
+* Store existing account credentials in the application
+
+* Create new account credentials
+
+* Change passwords
+
+* View account credentials and passwords
+
+* Delete credentials account not needed
 
 ## Installation
 
@@ -28,6 +45,8 @@
 
 [Go Back to the top](#Password Locker)
 ## Technology Used
+
+
 * Python
 
 
@@ -38,7 +57,7 @@
 
 
 
-Copyright (c) [2020] [Winston Musasia]
+Copyright (c) [2022] [Winston Musasia]
 
 
 [Go Back to the top](#Password Locker)
@@ -46,3 +65,4 @@ Copyright (c) [2020] [Winston Musasia]
 ## Authors Info
 
 Winston Musasia
+musasiawinston@gmail.com
