@@ -13,5 +13,11 @@ class User:
         """
         This defines properties to be included for the user
         """
-        
+
+        self.firstname = firstname
+        self.lastname = lastname
+        self.username = username
+        self.password = password
+
+
     
