@@ -25,6 +25,7 @@
 
 ### Installation Process
 
+
 [Go Back to the top](#Password Locker)
 ## Technology Used
 * Python
@@ -37,7 +38,7 @@
 
 
 
-Copyright (c) [2020] [Winston Musasia][LICENSE]
+Copyright (c) [2020] [Winston Musasia]
 
 
 [Go Back to the top](#Password Locker)
