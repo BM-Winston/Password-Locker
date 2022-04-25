@@ -35,5 +35,8 @@ class User:
         Use.user_list.remove(self)
 
 
+class Credenitals:
+
+
 
     
