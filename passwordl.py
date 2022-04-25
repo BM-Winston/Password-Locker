@@ -41,10 +41,20 @@ class Credenitals:
     """
     cred_list = []
 
-    def __init__(self, credname, credpassword):
+    def __init__(self, acc_name, acc_password):
 
         self.acc_name = acc_name
         self.acc_password = acc_password
+
+
+    def save-cred(self):
+        """
+        this saves credentials into cred_list
+        """
+
+        Credenitals.cred_list.save(self)
+
+    
 
 
 
