@@ -32,6 +32,8 @@ class User:
         removes users from the user_list
         """
 
+        Use.user_list.remove(self)
+
 
 
     
