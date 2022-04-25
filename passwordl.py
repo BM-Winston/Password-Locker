@@ -10,4 +10,8 @@ class User:
 
 
     def __init__(self, firstname, lastname, username, password):
+        """
+        This defines properties to be included for the user
+        """
+        
     
