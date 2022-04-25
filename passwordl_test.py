@@ -8,7 +8,7 @@ class TestUser(unittest.TestCase):
     """
 
 
-    def setup(self):
+    def setUp(self):
         """
         first test
         """
@@ -40,7 +40,63 @@ class TestUser(unittest.TestCase):
         User.user_list = []
 
 
-class TestCredentials(unittest.TestCase)
+class TestCredentials(unittest.TestCase):
+
+
+    def setUp(self):
+
+        """
+        Test for credentials
+        """
+
+    
+        self.new_credentials = Credentials("Reddit", "87654321")
+
+
+    def test_init(self):
+
+        """
+        test if objects are initialized correctly
+        """
+
+        self.asserEqual(self.new_credentials.acc_name,"Reddit")
+        self.asserEqual(self.new_credentials.acc_password,"87654321")
+
+    
+    def test_save_credentials(self):
+
+        """
+        test_save_credentials test case to test if the credentials object is saved into the cred_list
+        """
+
+        self.new_credentials.save(save_credentials())
+        self.asserEqual(len(Credentials.credentials_list),1)
+
+
+
+    def tearDown(self):
+        """
+        cleans up after each run
+        """
+
+        Credenitals.cred_list = []
+
+
+if __name__ == '__main__':
+    unittest.main()
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 
     
