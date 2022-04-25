@@ -101,6 +101,19 @@ class Credenitals:
                 return credentials
 
 
+     
+    def generate_password(ln):
+        '''
+        generate random password for strings, numbers and integers
+        '''
+        chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890=?!#/@~$*"
+        password = " "
+        for i in range(ln):
+            password += chars[randint(0, len(chars) - 1)]
+        return password
+
+
+
    
 
 
