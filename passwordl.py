@@ -1,3 +1,4 @@
+
 import random
 import string
 import pyperclip
@@ -32,15 +33,15 @@ class User:
         removes users from the user_list
         """
 
-        Useruser_list.remove(self)
+        User.user_list.remove(self)
 
 
     @classmethod
-    def displays_users(cls):
+    def show_users(cls):
         """
         method that displays users_list
         """
-        return user_list
+        return cls.user_list
 
 
     @classmethod
@@ -50,14 +51,14 @@ class User:
         """
 
         for user in cls.user_list:
-            if user.username == number:
+            if user.username == username:
                 return user
 
 
 
 
 
-class Credenitals:
+class Credentials:
     """
     This class defines properties of the credentials objects
     """
@@ -74,29 +75,29 @@ class Credenitals:
         this saves credentials into cred_list
         """
 
-        Credenitals.cred_list.save(self)
+        Credentials.cred_list.save(self)
 
     def delete_acc(self):
         """
         deletes credentials in the cred_list
         """
 
-        Credenitals.cred_list.remove(self)
+        Credentials.cred_list.remove(self)
 
     @classmethod
     def display_credentials(cls):
         """
         method that returns the cred_list
         """
-        return credentials.cred_list
+        return cls.cred_list
 
 
     @classmethod
-    def check_credentials(cls):
+    def check_credentials(cls, acc_name):
         """
         method that takes in an acc_name and return name match in acc_name
         """
-        for credentials in cred_list:
+        for credentials in cls.cred_list:
             if credentials.acc_name == acc_name:
                 return credentials
 
@@ -109,7 +110,7 @@ class Credenitals:
         chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890=?!#/@~$*"
         password = " "
         for i in range(ln):
-            password += chars[randint(0, len(chars) - 1)]
+            password += chars[random.randint(0, len(chars) - 1)]
         return password
 
 

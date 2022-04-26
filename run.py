@@ -1,5 +1,6 @@
-from user import User
-from credentials import Credenitals
+from passwordl import User, Credentials
+
+
 
 def create_user(firstname, lastname, username, password):
     """
@@ -8,13 +9,13 @@ def create_user(firstname, lastname, username, password):
     new_user = User(firstname, lastname, username, password)
     return new_user
 
-def save_user(self):
+def save_user(user):
     """
     Saves user
     """
     user.save_user()
 
-def delete_user(self):
+def delete_user(user):
     """
     removes user
     """
@@ -25,14 +26,14 @@ def displays_user():
     """
     This function displays users
     """
-    return User.displays_user()
+    User.show_user()
 
 
 def check_user(username, password):
     """
     Check if user is in the user list
     """
-    check_user = Credenitals.check_user(username, password)
+    check_user = Credentials.check_user(username, password)
     return check_user
 
     
@@ -40,7 +41,7 @@ def generate_password():
     """
     Function to enable password generation
     """
-    generate_password = Credenitals.generatePassword()
+    generate_password = Credentials.generatePassword()
     return generate_password
 
 
@@ -82,7 +83,74 @@ def display_credentials():
 
 
 
+def main():
+    print('')
+    print('Hello. Welcome to password locker! Enter username.')
+    username = input()
+    print(f"Hello {username}. " )
+    while True:
+        
+        
+        print("\n")
+        print("What would you like to do? \nnu = New User, du = Display User, ")
 
+        short_code = input().lower()
+
+
+        if short_code == 'nu':
+            print ("New User")
+            print("-"*10)
+
+
+            print("First name ...")
+            firstname = input()
+
+            print("lastname ...")
+            lastname = input()
+
+            print("username ...")
+            username = input()
+
+            print("Password ...")
+            password = input()
+
+
+            save_user(create_user(firstname, lastname, username, password))
+            print('\n')
+
+
+
+        elif short_code == 'du':
+                if displays_user() == None:
+                    print("This account does not exist")
+                    print('\n')
+
+                   
+
+                else:
+                    print("Find a list of users")
+                    print('\n')
+
+                    for user in displays_user():
+                        print(f"{user.firstname}{user.lastname}{user.username}")
+                        print('\n')
+
+
+                           
+
+
+        elif short_code == '':
+                print("Nice time")
+
+                        
+            
+
+
+
+
+
+if __name__ == '__main__':
+    main()
 
 
 
