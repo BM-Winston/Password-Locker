@@ -70,6 +70,22 @@ class Credentials:
         self.acc_password = acc_password
 
 
+    def display_credentials(self):
+
+        """
+        this displays credentials
+
+        """
+        return Credentials.cred_list
+
+
+    def create_new_credentials(self):
+        """
+        Creates new account credentials
+        """
+        return 
+
+
     def save_acc(self):
         """
         this saves credentials into cred_list

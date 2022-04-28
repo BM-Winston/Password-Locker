@@ -79,7 +79,7 @@ class TestCredentials(unittest.TestCase):
         cleans up after each run
         """
 
-        Credenitals.cred_list = []
+        Credentials.cred_list = []
 
 
 if __name__ == '__main__':

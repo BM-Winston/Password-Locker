@@ -26,7 +26,7 @@ def displays_user():
     """
     This function displays users
     """
-    User.show_user()
+    User.show_users()
 
 
 def check_user(username, password):
@@ -92,7 +92,7 @@ def main():
         
         
         print("\n")
-        print("What would you like to do? \nnu = New User, du = Display User, ")
+        print("What would you like to do? \nnu = New User, du = Display User, dc = display_credentials, cn = create_new_credentials,  ")
 
         short_code = input().lower()
 
@@ -121,17 +121,17 @@ def main():
 
 
         elif short_code == 'du':
-                if displays_user() == None:
+                if display_credentials() == None:
                     print("This account does not exist")
                     print('\n')
 
                    
 
                 else:
-                    print("Find a list of users")
+                    print("Find a list of credentials")
                     print('\n')
 
-                    for user in displays_user():
+                    for user in display_credentials():
                         print(f"{user.firstname}{user.lastname}{user.username}")
                         print('\n')
 
