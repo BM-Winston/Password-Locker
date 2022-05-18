@@ -2,6 +2,7 @@
 import random
 import string
 import pyperclip
+from sqlalchemy import false
 
 class User:
     """
@@ -54,6 +55,25 @@ class User:
             if user.username == username:
                 return user
 
+    
+    @classmethod
+    def user_exist(cls, username):
+        """
+        Checks if user exists in user_list
+        """
+
+        for user in cls.user_list:
+            if user.username == username:
+                return True
+            
+            else:
+                return False
+
+
+
+
+                return false
+
 
 
 
@@ -64,12 +84,31 @@ class Credentials:
     """
     cred_list = []
 
-    def __init__(self, acc_name, acc_password):
+    def __init__(self, acc_name,acc_username, acc_password):
 
         self.acc_name = acc_name
         self.acc_password = acc_password
+        self.acc_username= acc_username
+
+    
+    def save_account(self):
+        """
+        this saves credentials into cred_list
+        """
+
+        Credentials.cred_list.append(self)
 
 
+
+    def delete_account(self):
+        """
+        deletes credentials in the cred_list
+        """
+
+        Credentials.cred_list.remove(self)        
+    
+    
+    
     def display_credentials(self):
 
         """
@@ -86,19 +125,44 @@ class Credentials:
         return 
 
 
-    def save_acc(self):
+    
+
+    
+    @classmethod
+    def existing_account(cls, name):
         """
-        this saves credentials into cred_list
+        checks if the account exists in cred_list
+
         """
 
-        Credentials.cred_list.save(self)
+        for account in cls.cred_list:
+            if account.acc_name == name:
+                return True
+            else:
+                return False
 
-    def delete_acc(self):
+    
+    @classmethod
+    def find_by_account(cls,acc_name):
         """
-        deletes credentials in the cred_list
+        method that matches name with the account name
         """
 
-        Credentials.cred_list.remove(self)
+        for account in cls.cred_list:
+            if account.acc_name == acc_name:
+                return account
+
+    @classmethod
+    def display_accounts(cls):
+
+        """
+        method that shows the list of accounts available
+        """
+
+        for account in cls.cred_list:
+            return cls.cred_list
+
+
 
     @classmethod
     def display_credentials(cls):
