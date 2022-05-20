@@ -138,7 +138,7 @@ def main():
         
         
         print("\n")
-        print("What would you like to do? \ ca = create account,   cn = create_new_credentials, fa = find account, dc = display_credentials, del =  delete, e = exit ,  ")
+        print("What would you like to do? \ ca = create account,fa = find account, del =  delete, e = exit ,  ")
 
         short_code = input().lower()
 
@@ -263,7 +263,7 @@ def main():
                 print(' ')
 
         elif short_code == 'e':
-            print("Nice time .......")
+            print("Thanks for using Password-Locker.Nice time .......")
             break
 
         else:
