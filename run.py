@@ -138,12 +138,12 @@ def main():
         
         
         print("\n")
-        print("What would you like to do? \ ca = create account,fa = find account, del =  delete, e = exit ,  ")
+        print("What would you like to do? \ cca = create credential account,dc = display list of credentials , del =  delete credential, e = exit ,  ")
 
         short_code = input().lower()
 
 
-        if short_code == 'ca':
+        if short_code == 'cca':
             print ("New Account")
             print("-"*10)
 
@@ -184,7 +184,7 @@ def main():
         #                 print('\n')                               
 
 
-        elif short_code == 'fa':
+        elif short_code == 'dc':
             while True:
 
 
@@ -195,7 +195,7 @@ def main():
 
                 else:
 
-                    print("No accounts created")
+                    print("No credentials saved")
 
                 print("Go back to main menu y")
                 option= input().lower()

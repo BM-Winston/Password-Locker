@@ -12,16 +12,16 @@ class TestUser(unittest.TestCase):
         """
         first test
         """
-        self new_user = User("Winston, abcdefgh")
+        self.new_user = User("Winston, abcdefgh")
 
 
-    def test_init():
+    def test_init(self):
         """
         test to check if object is initialized correctly
         """
 
         self.asserEqual(self.new_user.username, "Winston")
-        self.asserEqual(sel.new_user.password,"abcdefgh")
+        self.asserEqual(self.new_user.password,"abcdefgh")
 
 
     def test_save_user(self):
@@ -30,7 +30,7 @@ class TestUser(unittest.TestCase):
          the user_list
         """
         self.new_user.save_user
-        self.asserEqual(len(User.user_list)1)
+        self.asserEqual(len(User.user_list),1)
 
 
     def tearDown(self):
@@ -50,7 +50,7 @@ class TestCredentials(unittest.TestCase):
         """
 
     
-        self.new_credentials = Credentials("Reddit", "87654321")
+        self.new_credentials = Credentials("Reddit","winston","abcdefgh")
 
 
     def test_init(self):
@@ -60,7 +60,8 @@ class TestCredentials(unittest.TestCase):
         """
 
         self.asserEqual(self.new_credentials.acc_name,"Reddit")
-        self.asserEqual(self.new_credentials.acc_password,"87654321")
+        self.asserEqual(self.new_credentials.acc_password,"abcdefgh")
+        self.asserEqual(self.new_credentials.username,"winston")
 
     
     def test_save_credentials(self):
@@ -68,8 +69,8 @@ class TestCredentials(unittest.TestCase):
         """
         test_save_credentials test case to test if the credentials object is saved into the cred_list
         """
-
-        self.new_credentials.save(save_credentials())
+        self.new_credentials.save_account()
+        
         self.asserEqual(len(Credentials.credentials_list),1)
 
 
